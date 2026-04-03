@@ -83,14 +83,14 @@ a:hover {
 .sidebar-card {
   position: sticky;
   top: 24px;
-  padding: 0 0 8px;
+  padding: 0;
 }
 
 .avatar {
   display: block;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 18px;
+  width: 168px;
+  height: 168px;
+  margin: 0 0 16px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -105,7 +105,7 @@ a:hover {
 
 .sidebar h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.2;
 }
 
@@ -116,7 +116,7 @@ a:hover {
 }
 
 .sidebar-bio {
-  margin: 0 0 18px;
+  margin: 8px 0 14px;
   color: var(--muted);
 }
 
@@ -130,6 +130,46 @@ a:hover {
   padding: 8px 0;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
+}
+
+.sidebar-link-list {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  color: #4b5563;
+  font-size: 0.98rem;
+}
+
+.sidebar-link-item a,
+.sidebar-link-item span:last-child {
+  color: inherit;
+}
+
+.sidebar-link-item a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #111111;
+  flex: 0 0 18px;
+}
+
+.sidebar-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .content {

@@ -191,10 +191,22 @@ a:hover {
 
 .simple-list p {
   margin: 0 0 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .simple-list p:last-child {
   margin-bottom: 0;
+}
+
+.career-date {
+  flex: 0 0 148px;
+}
+
+.career-text {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .entry-list {
